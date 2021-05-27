@@ -1,7 +1,9 @@
-PATH
-  remote: ../govuk_design_system_formbuilder
+GIT
+  remote: https://github.com/jrmhaig/govuk_design_system_formbuilder
+  revision: 62d47b784bb0632b02a7a6d3eaf4efe90ff36159
+  branch: empty_wrap_conditional_content
   specs:
-    govuk_design_system_formbuilder (2.5.0)
+    govuk_design_system_formbuilder (2.5.1)
       actionview (>= 6.0)
       activemodel (>= 6.0)
       activesupport (>= 6.0)

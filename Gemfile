@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'haml'
 # gem 'govuk_design_system_formbuilder'
-gem 'govuk_design_system_formbuilder', path: '../govuk_design_system_formbuilder'
+gem 'govuk_design_system_formbuilder', git: 'https://github.com/jrmhaig/govuk_design_system_formbuilder', branch: 'empty_wrap_conditional_content'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
