@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.govuk-checkboxes__conditional {
+  margin-top: 50px;
+}

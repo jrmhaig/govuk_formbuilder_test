@@ -1,0 +1,10 @@
+= form_for @test, builder: GOVUKDesignSystemFormBuilder::FormBuilder do |f|
+  = f.govuk_check_box(:name, 'Name', label: { text: 'First checkbox' })
+  = f.govuk_check_box(:name, 'Name', label: { text: 'Second checkbox' }) do
+    - if true
+      = f.govuk_collection_radio_buttons :name, [['Yes', 'true'], ['No', 'false']], :last, :first, inline: true, legend: { text: 'Radio buttons', size: 's' }
+  = f.govuk_check_box(:name, 'Name', label: { text: 'Third checkbox' }) do
+    - if false
+      = f.govuk_collection_radio_buttons :name, [['Yes', 'true'], ['No', 'false']], :last, :first, inline: true, legend: { text: 'Radio buttons', size: 's' }
+  = f.govuk_check_box(:name, 'Name', label: { text: 'Fourth checkbox' })
+  = f.govuk_check_box(:name, 'Name', label: { text: 'Fifth checkbox' })
